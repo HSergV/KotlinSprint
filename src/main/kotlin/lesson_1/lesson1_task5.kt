@@ -7,7 +7,7 @@ fun main(){
     val minute = (secondsGeneral % 3600) / 60
     val seconds = secondsGeneral % 60
 
-    var formatHour = ""
+   /* var formatHour = ""
     var formatMinute = ""
     var formatSeconds = ""
 
@@ -29,6 +29,12 @@ fun main(){
         formatSeconds = seconds.toString()
     }
 
-    println("${formatHour}:${formatMinute}:${formatSeconds}")
+    println("${formatHour}:${formatMinute}:${formatSeconds}")*/
+
+    print("%02d".format(hour))
+    print(":")
+    print("%02d".format(minute))
+    print(":")
+    print("%02d".format(seconds))
 
 }
