@@ -1,11 +1,11 @@
 package org.example
 
-fun main(){
+fun main() {
 
-    var damage = readln().toBoolean()
-    var numberCrew = readln().toInt()
-    var numberBoxes = readln().toInt()
-    var goodWeather = readln().toBoolean()
+    val damage = readln().toBoolean()
+    val numberCrew = readln().toInt()
+    val numberBoxes = readln().toInt()
+    val goodWeather = readln().toBoolean()
 
     val possibilitySailing = ((damage == DAMAGE)
             &&(numberCrew in NUMBER_OF_CREW_MIN..NUMBER_OF_CREW_MAX)
