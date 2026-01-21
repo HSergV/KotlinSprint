@@ -1,8 +1,8 @@
 package org.example
 
-fun main(){
+fun main() {
 
-    var day = 5
+    val day = 5
     val hand = 1
     val leg = 0
     val back = 0
