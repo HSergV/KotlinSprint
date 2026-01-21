@@ -1,6 +1,6 @@
 package org.example.lesson_3
 
-fun main(){
+fun main() {
 
     val saluteDay = "Good afternoon"
     val saluteEvening = "Good evening"
