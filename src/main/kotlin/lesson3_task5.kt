@@ -1,6 +1,6 @@
 package org.example
 
-fun main(){
+fun main() {
 
     val message = "D2-D4;0"
     val parts = message.split("-",";")
