@@ -1,6 +1,6 @@
 package org.example
 
-fun main(){
+fun main() {
 
     val reservationToday = 13
     val reservationTomorrow = 9
