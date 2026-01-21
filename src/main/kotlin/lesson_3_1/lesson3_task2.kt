@@ -1,6 +1,6 @@
 package org.example.lesson_3_1
 
-fun main(){
+fun main() {
 
     val familyName = "Андреева"
     val firstName = "Татьяна"
