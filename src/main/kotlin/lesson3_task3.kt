@@ -1,6 +1,6 @@
 package org.example
 
-fun main(){
+fun main() {
 
     var a: Int
 
