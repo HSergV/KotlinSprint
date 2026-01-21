@@ -1,6 +1,6 @@
 package org.example
 
-fun main(){
+fun main() {
 
     val weather = true
     val awning = true
