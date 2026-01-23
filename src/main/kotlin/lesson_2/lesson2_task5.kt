@@ -9,12 +9,12 @@ fun main() {
     val paymentsPerYear = 1.0
     val years = 20.0
 
-    val precentOneYear =  (paymentsPerYear + percent / ALL_PRECENT)
-    val precentAllPeriod = precentOneYear.pow(years)
-    val depositAmount = initialAmount * precentAllPeriod
+    val percentOneYear = (paymentsPerYear + percent / ALL_PERCENT)
+    val percentAllPeriod = percentOneYear.pow(years)
+    val depositAmount = initialAmount * percentAllPeriod
 
-    println(String.format("%.3f", depositAmount))
+    println("%.3f".format(depositAmount))
 
 }
 
-const val ALL_PRECENT = 100.0
+const val ALL_PERCENT = 100.0
