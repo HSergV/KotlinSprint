@@ -17,7 +17,7 @@ fun main() {
             && (volumeSecondLoad < AVERAGE_VOLUME)
 
     println("Груз с весом 20 кг и объемом 80 л соответствует категории 'Average': " +
-            "${average == loadFirst}")
+            "$loadFirst")
 
     println("Груз с весом 50 кг и объемом 100 л соответствует категории 'Average': " +
             "${average == loadSecond}")
