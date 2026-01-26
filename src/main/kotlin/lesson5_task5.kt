@@ -3,18 +3,18 @@ package org.example
 
 fun main() {
 
-    val a = (NUMBER_MIN..NUMBER_MAX).random()
-    val b = (NUMBER_MIN..NUMBER_MAX).random()
-    val c = (NUMBER_MIN..NUMBER_MAX).random()
+    val correctNumberOne = (NUMBER_MIN..NUMBER_MAX).random()
+    val correctNumberTwo = (NUMBER_MIN..NUMBER_MAX).random()
+    val correctNumberTree = (NUMBER_MIN..NUMBER_MAX).random()
     val randomList = mutableListOf<Int>()
-    randomList.addAll(listOf(a, b, c))
+    randomList.addAll(listOf(correctNumberOne, correctNumberTwo, correctNumberTree))
     val textInput = "Введите первое число от 0 до 42"
     val textWin = "Поздравляем вы выиграли джекпот!!!"
     val textTwoAnswer = "Поздравляем! вы угадали два числа, и выиграли крупный приз"
     val textOneAnswer = "Вы угадали одно число. Получите ваш утешительный приз"
     val textLoss = "Вы не угадали ни одного числа."
     val winNumber = "Выигрышные числа - "
-    val textNumber = "$a, $b, $c"
+    val textNumber = "$correctNumberOne, $correctNumberTwo, $correctNumberTree"
 
     println(textInput)
     val inputNumberOne = readln().toInt()
