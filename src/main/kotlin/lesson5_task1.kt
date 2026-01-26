@@ -1,11 +1,9 @@
 package org.example
 
-import kotlin.random.Random
-
 fun main() {
 
-    val a = Random.nextInt(1, 10)
-    val b = Random.nextInt(1, 10)
+    val a = (1..10).random()
+    val b = (1..10).random()
     val x = a + b
 
     println(
