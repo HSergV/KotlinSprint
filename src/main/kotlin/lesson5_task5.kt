@@ -1,6 +1,5 @@
 package org.example
 
-import kotlin.random.Random
 
 fun main() {
 
