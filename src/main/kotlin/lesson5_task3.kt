@@ -2,8 +2,8 @@ package org.example
 
 fun main() {
 
-    val a = 16
-    val b = 35
+    val correctNumberOne = 16
+    val correctNumberTwo = 35
     val textInput = "Введите первое число от 0 до 42"
 
     println(textInput)
@@ -14,16 +14,16 @@ fun main() {
     var resultNumberOne = false
     var resultNumberTwo = false
 
-    if (inputNumberOne == a || inputNumberOne == b) resultNumberOne = true
+    if (inputNumberOne == correctNumberOne || inputNumberOne == correctNumberTwo) resultNumberOne = true
 
-    if (inputNumberTwo == a || inputNumberTwo == b) resultNumberTwo = true
+    if (inputNumberTwo == correctNumberOne || inputNumberTwo == correctNumberTwo) resultNumberTwo = true
 
     if (inputNumberOne == inputNumberTwo) resultNumberTwo = false
 
     val textWin = "Поздравляем! Вы выиграли главный приз!"
     val textConsolationPrize = "Вы выиграли утешительный приз!"
     val textLoss = "Неудача!"
-    val textNumber = "Выигрышные числа - $a, $b."
+    val textNumber = "Выигрышные числа - $correctNumberOne, $correctNumberTwo."
 
     if (resultNumberOne && resultNumberTwo) {
         println(textWin)
