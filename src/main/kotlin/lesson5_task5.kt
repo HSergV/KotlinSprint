@@ -4,9 +4,9 @@ import kotlin.random.Random
 
 fun main() {
 
-    val a = Random.nextInt(NUMBER_MIN, NUMBER_MAX)
-    val b = Random.nextInt(NUMBER_MIN, NUMBER_MAX)
-    val c = Random.nextInt(NUMBER_MIN, NUMBER_MAX)
+    val a = (NUMBER_MIN..NUMBER_MAX).random()
+    val b = (NUMBER_MIN..NUMBER_MAX).random()
+    val c = (NUMBER_MIN..NUMBER_MAX).random()
     val randomList = mutableListOf<Int>()
     randomList.addAll(listOf(a, b, c))
     val textInput = "Введите первое число от 0 до 42"
