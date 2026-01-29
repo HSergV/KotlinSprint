@@ -2,24 +2,20 @@ package org.example
 
 fun main() {
 
-    val day = 5
-    val hand = 1
-    val leg = 0
-    val back = 0
-    val press = 1
+    val day = 6
+    val isEven = true
 
-    val whatDay = day % REMAINDER_OF_DIVISION
 
-    val praxisHand = hand == whatDay
-    val praxisLeg = leg == whatDay
-    val praxisBack = back == whatDay
-    val praxisPress = press == whatDay
+    val isOddDay = day % REMAINDER_OF_DIVISION == 0
+
+    val isPraxis = isEven == isOddDay
+
 
     println("""
-        Упражнение для рук: $praxisHand
-        Упражнение для ног: $praxisLeg
-        Упражнение для спины: $praxisBack
-        Упражнение для пресса: $praxisPress
+        Упражнение для рук: ${!isPraxis}
+        Упражнение для ног: $isPraxis
+        Упражнение для спины: $isPraxis
+        Упражнение для пресса: ${!isPraxis}
     """.trimIndent())
 
 }
