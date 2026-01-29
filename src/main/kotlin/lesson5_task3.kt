@@ -4,7 +4,7 @@ fun main() {
 
     val correctNumberOne = 16
     val correctNumberTwo = 35
-    val textInput = "Введите первое число от 0 до 42"
+    val textInput = "Введите число от 0 до 42"
 
     println(textInput)
     val inputNumberOne = readln().toInt()
@@ -17,8 +17,6 @@ fun main() {
     if (inputNumberOne == correctNumberOne || inputNumberOne == correctNumberTwo) resultNumberOne = true
 
     if (inputNumberTwo == correctNumberOne || inputNumberTwo == correctNumberTwo) resultNumberTwo = true
-
-    if (inputNumberOne == inputNumberTwo) resultNumberTwo = false
 
     val textWin = "Поздравляем! Вы выиграли главный приз!"
     val textConsolationPrize = "Вы выиграли утешительный приз!"
