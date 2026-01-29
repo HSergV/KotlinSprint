@@ -2,19 +2,19 @@ package org.example
 
 fun main() {
 
-    val damage = readln().toBoolean()
+    val hasDamage = readln().toBoolean()
     val numberCrew = readln().toInt()
     val numberBoxes = readln().toInt()
     val goodWeather = readln().toBoolean()
 
-    val possibilitySailing = ((damage == DAMAGE)
-            &&(numberCrew in NUMBER_OF_CREW_MIN..NUMBER_OF_CREW_MAX)
-            &&(numberBoxes > NUMBER_OF_BOXES)
-            &&(goodWeather == GOOD_WEATHER)) ||
-                    ((damage != DAMAGE)
-                    &&(numberCrew > NUMBER_OF_CREW_MAX)
-                    &&(numberBoxes > NUMBER_OF_BOXES)
-                    &&(goodWeather == GOOD_WEATHER))
+    val possibilitySailing = (!hasDamage
+            && (numberCrew in NUMBER_OF_CREW_MIN..NUMBER_OF_CREW_MAX)
+            && (numberBoxes > NUMBER_OF_BOXES)
+            && (goodWeather == GOOD_WEATHER)) ||
+            ((hasDamage != DAMAGE)
+                    && (numberCrew == NUMBER_OF_CREW_MAX)
+                    && (numberBoxes >= NUMBER_OF_BOXES)
+                    && goodWeather)
 
     println(possibilitySailing)
 
